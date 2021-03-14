@@ -5,7 +5,9 @@ require("dotenv").config();
 
 function SidebarRight(props) {
     function sendEmail(e) {
-        console.log(props)
+        // console.log(props)
+        // REMOVE LINE 10 - 8
+        console.log(process.env)
         e.preventDefault();
         emailjs.init(process.env.REACT_APP_USERID)
         emailjs.send(process.env.REACT_APP_SERVICE_ID,process.env.REACT_APP_TEMPLATE_ID,{
