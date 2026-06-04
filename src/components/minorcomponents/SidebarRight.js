@@ -1,7 +1,7 @@
 import Messaging from '../minorcomponents/Messaging'
 import React from "react";
 import emailjs from 'emailjs-com';
-require("dotenv").config();
+// require("dotenv").config();
 
 function SidebarRight(props) {
     function sendEmail(e) {
